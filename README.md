@@ -10,8 +10,8 @@ Provide a way to inject environment variables into your application
 
 ### Usage
 
-- Create a ``.env.json`` file at the root of your project.
 - Create a ``data/config.json`` file.
+- Create a ``.env.json`` file at the root of your project.
 
 ```javascript
 import configEnv from '@thoughtsunificator/rollup-plugin-config-env'
@@ -23,14 +23,15 @@ export default {
 }
 ```
 
-``.env.json``
+
+``data/config.json``
 ```json
 {
 	"SITE_NAME": "FOO"
 }
 ```
 
-``data/config.json``
+``.env.json``
 ```json
 {
 	"SITE_NAME": "BAR"

@@ -45,11 +45,11 @@ module.exports = {
 				config[key] = configFile[key]
 			}
 			for(const key in envFile) {
-				if(key in process.env) {
-					config[key] = process.env[key]
-				} else {
-					config[key] = envFile[key]
-				}
+				config[key] = envFile[key]
+			}
+			const processEnvKeys = Object.keys(config).filter(key => key in process.env)
+			for(const key of processEnvKeys) {
+				config[key] = process.env[key]
 			}
 			return `export default ${JSON.stringify(config)}`
 		}

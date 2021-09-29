@@ -1,6 +1,6 @@
-import fs from "fs"
+const fs = require("fs")
 
-export default {
+module.exports = {
 	name: 'config',
 	resolveId ( source ) {
 		if(source === ":config") {
@@ -42,12 +42,13 @@ export default {
 			}
 			let config = {}
 			for(const key in configFile) {
-				if(key in envFile) {
-					config[key] = envFile[key]
-				} else if(key in process.env) {
+				config[key] = configFile[key]
+			}
+			for(const key in envFile) {
+				if(key in process.env) {
 					config[key] = process.env[key]
 				} else {
-					config[key] = configFile[key]
+					config[key] = envFile[key]
 				}
 			}
 			return `export default ${JSON.stringify(config)}`

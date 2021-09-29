@@ -11,6 +11,5 @@
 	},
 	"author": "Romain Lebesle <oss@thoughtsunificator.me> (https://thoughtsunificator.me)",
 	"license": "MIT",
-	"type": "module",
 	"main": "index.js"
 }

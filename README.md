@@ -18,7 +18,7 @@ import configEnv from '@thoughtsunificator/rollup-plugin-config-env'
 
 export default {
 	plugins: [
-		configEnv({})
+		configEnv
 	]
 }
 ```

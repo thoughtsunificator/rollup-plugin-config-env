@@ -6,7 +6,7 @@ Provide a way to inject environment variables into your application
 
 ### Installing
 
-- ``npm install @thoughtsunificator/rollup-plugin-config-env``
+- ``npm install @thoughtsunificator/rollup-plugin-config-env --save-dev``
 
 ### Usage
 

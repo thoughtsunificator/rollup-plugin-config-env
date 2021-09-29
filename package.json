@@ -1,0 +1,16 @@
+{
+	"name": "@thoughtsunificator/rollup-plugin-config-env",
+	"version": "1.0.0",
+	"description": "Provide a way to inject environment variables into your bundle",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/thoughtsunificator/rollup-plugin-config-env.git"
+	},
+	"bugs": {
+		"url": "https://github.com/thoughtsunificator/rollup-plugin-config-env/issues"
+	},
+	"author": "Romain Lebesle <oss@thoughtsunificator.me> (https://thoughtsunificator.me)",
+	"license": "MIT",
+	"type": "module",
+	"main": "index.j"
+}

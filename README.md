@@ -6,7 +6,7 @@ Provide a way to inject environment variables into your application.
 
 ### Installing
 
-- ``npm install @thoughtsunificator/rollup-plugin-config-env``
+- ``npm install @thoughtsunificator/rollup-plugin-config-env --save-dev``
 
 ### How does it work?
 
@@ -30,14 +30,15 @@ export default {
 }
 ```
 
-``.env.json``
+
+``data/config.json``
 ```json
 {
   "SITE_NAME": "FOO"
 }
 ```
 
-``data/config.json``
+``.env.json``
 ```json
 {
   "SITE_NAME": "BAR"

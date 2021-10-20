@@ -17,23 +17,23 @@ Provide a way to inject environment variables into your application
 import configEnv from '@thoughtsunificator/rollup-plugin-config-env'
 
 export default {
-	plugins: [
-		configEnv({})
-	]
+  plugins: [
+    configEnv({})
+  ]
 }
 ```
 
 ``.env.json``
 ```json
 {
-	"SITE_NAME": "FOO"
+  "SITE_NAME": "FOO"
 }
 ```
 
 ``data/config.json``
 ```json
 {
-	"SITE_NAME": "BAR"
+  "SITE_NAME": "BAR"
 }
 ```
 
@@ -45,7 +45,7 @@ import config from ":config"
 console.log(config)
 /* outputs:
 {
-	SITE_NAME: "BAR"
+  SITE_NAME: "BAR"
 }
 */
 

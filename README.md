@@ -1,6 +1,6 @@
 # rollup-plugin-config-env
 
-Provide a way to inject environment variables into your application
+Provide a way to inject environment variables into your application.
 
 ## Getting started
 
@@ -8,17 +8,24 @@ Provide a way to inject environment variables into your application
 
 - ``npm install @thoughtsunificator/rollup-plugin-config-env``
 
-### Usage
+### How does it work?
 
-- Create a ``.env.json`` file at the root of your project.
-- Create a ``data/config.json`` file.
+rollup-plugin-config-env will create a new object from the config file, env file and ``process.env``.
+
+Order of priority:
+
+1. process.env
+2. env file
+3. config file
+
+### Usage
 
 ```javascript
 import configEnv from '@thoughtsunificator/rollup-plugin-config-env'
 
 export default {
   plugins: [
-    configEnv({})
+    configEnv({ envPath = ".env.json", configPath = "data/config.json" })
   ]
 }
 ```

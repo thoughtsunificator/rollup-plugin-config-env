@@ -44,7 +44,7 @@ module.exports = config => {
 				} else {
 					configFile = {}
 				}
-				let config = {}
+				const config = {}
 				for(const key in configFile) {
 					config[key] = configFile[key]
 				}

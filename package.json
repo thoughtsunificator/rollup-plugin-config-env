@@ -11,5 +11,8 @@
 	},
 	"author": "Romain Lebesle <oss@thoughtsunificator.me> (https://thoughtsunificator.me)",
 	"license": "MIT",
-	"main": "index.js"
+	"main": "index.js",
+	"dependencies": {
+		"@thoughtsunificator/config-env": "^1.0.3"
+	}
 }

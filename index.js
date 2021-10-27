@@ -1,3 +1,4 @@
+const fs = require("fs")
 const { createConfig } = require("@thoughtsunificator/config-env")
 
 module.exports = config => {

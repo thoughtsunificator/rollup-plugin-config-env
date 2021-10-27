@@ -25,7 +25,7 @@ import configEnv from '@thoughtsunificator/rollup-plugin-config-env'
 
 export default {
   plugins: [
-    configEnv({ envPath = ".env.json", configPath = "data/config.json" })
+    configEnv({ envPath: ".env.json", configPath: "data/config.json" })
   ]
 }
 ```

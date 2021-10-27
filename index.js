@@ -1,7 +1,7 @@
-const fs = require("fs")
-const { createConfig } = require("@thoughtsunificator/config-env")
+import fs from "fs"
+import { createConfig } from "@thoughtsunificator/config-env"
 
-module.exports = config => {
+export default config => {
 
 	const { envPath = ".env.json", configPath = "data/config.json" } = config
 

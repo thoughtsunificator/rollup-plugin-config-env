@@ -2,7 +2,7 @@
 	"name": "@thoughtsunificator/rollup-plugin-config-env",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
-	"version": "1.0.14",
+	"version": "1.0.15",
 	"description": "Provide a way to inject environment variables into your bundle",
 	"repository": {
 		"type": "git",

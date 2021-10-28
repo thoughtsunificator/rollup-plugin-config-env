@@ -16,7 +16,7 @@
 	"scripts": {
 		"build": "rollup -c",
 		"prebuild": "rimraf dist",
-		"prepublishOnly": "npm run build; exit 1; fi"
+		"prepublishOnly": "npm run build"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.15.8",

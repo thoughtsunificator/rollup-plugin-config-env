@@ -1,7 +1,7 @@
 import fs from "fs"
 import { createConfig } from "@thoughtsunificator/config-env"
 
-export default config => {
+export default (config = {}) => {
 
 	const { envPath = ".env.json", configPath = "data/config.json" } = config
 
